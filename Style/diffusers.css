@@ -1,0 +1,37 @@
+img{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+.child{
+    /* border: rgb(0, 156, 96) solid 1px; */
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: 24pt;
+}
+
+.child p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.inf-p{
+    font-size: 24pt;
+    color: white;
+    margin-top: 5px;
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 15px;
+    width: 250px;
+    margin: auto;
+    padding: 5px;
+}

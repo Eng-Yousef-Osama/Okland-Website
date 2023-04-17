@@ -1,0 +1,399 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+img{
+    border-radius: 15px;
+}
+.rad-10{
+    border-radius: 10px;
+}
+
+
+/* NavBar Start -------------------------------------------------------------------------------------------*/
+nav{
+    background-color: #202020;
+    margin: auto;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    /* justify-items: center; */
+    grid-gap: 10px;
+    margin: auto;
+    padding: 10px;
+    color: #daa454;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transition: .3s ease-in-out;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.list{
+    /* background: #daa454; */
+    border-radius: 5px;
+    padding: 8px;
+    transition: .3s ease-in-out;
+}
+
+nav a{
+    text-decoration: none;
+    color: #daa454;
+    transition: .3s ease-in-out;
+}
+nav a:hover{
+    transition: .3s ease-in-out;
+    color: #ffffff;
+}
+
+/* NavBar End -------------------------------------------------------------------------------------------*/
+
+/* ------ Small Mobiles Start------ */
+@media (max-width: 539px){
+    nav{height: 40px;}
+    nav ul{
+        grid-template-columns: repeat(7, 60px);
+        padding: 5px;
+    }
+    nav ul li{font-size: 10pt;}
+    .list{padding: 5px;}
+    .logo{height: 200px; width: 200px;
+        margin-top: 20px;
+    }
+}
+/* ------ Small Mobiles End------ */
+
+
+/* Main Body Start */
+.logo{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    opacity: 0%;
+    transition: 1s ease-in-out;
+
+}
+.fade{
+    opacity: 100%;
+    transition: 1s ease-in-out;
+}
+.show{
+    opacity: 100%;
+    transition: 1s ease-in-out;
+}
+main .img{
+    margin-top: 50px;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background: url("../Photos/Backgrounds/main-Dark+Gold.jpg") no-repeat top;
+    width: 100%;
+}
+
+#okland{
+    color: #0A0C0D;
+    text-align: center;
+    font-size: 80pt;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #daa454;
+    transition: 1s ease-in-out;
+}
+
+
+.title{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 26pt;
+    background-color: #daa454;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    box-shadow: 1px 4px 4px #333333;
+}
+
+
+/*-------------------------------------------- Products Start -----------------------------------------------*/
+
+.products-link{
+    margin: auto;
+    border-bottom: #daa454 solid 1px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25pt;
+}
+.products-link p{
+    color: #daa454;
+    font-weight: bold;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(7, 250px);
+    grid-template-rows: repeat(2, 270px);
+    /* overflow-y:hidden;
+    overflow-x: scroll; */
+    margin-top: 0px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14pt;
+    /* background-color: #0A0C0D; */
+    /* background-image: url("../Photos/Backgrounds/Untitled-grey.png"); */
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;   
+}
+
+@media (max-width: 540px) {
+    .products{
+        grid-template-columns: repeat(2, 200px);
+
+    }
+}
+
+.products a{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+ .products img{
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    height: 220px;
+    width: 220px;
+ }
+
+.products a img:hover{
+   height: 240px;
+   width: 240px;
+}
+
+.prod-name{
+    margin: auto;
+}
+/*----------------------------------------------- Products End --------------------------------------------*/
+/* Main Body End */
+
+/* Feature New Product Start -------------------------------------------------------------------------------------------*/
+.feature{
+    font-size: 36pt;
+    text-align: center;
+    text-shadow: 0px 3px 4px #000000;
+    background: url("../Photos/Backgrounds/b1-web.jpg") no-repeat center;
+    width: 100%;
+    padding: 30px;
+}
+.feature p{
+    margin: 10px;
+    color: #daa454;
+
+}
+.theme{
+    box-shadow: 5px 5px 15px #000000;
+}
+.feature p a{
+    text-decoration: none;
+    font-size: 20pt;
+    color: #ffffff;
+}
+
+/* Feature New Product End -------------------------------------------------------------------------------------------*/
+
+
+/* The headquarter Start -------------------------------------------------------------------------------------------*/
+.headquarter{
+    display: grid;
+    grid-template-columns: repeat(2, 900px);
+    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 700px;
+}
+.headquarter h2{
+    font-size: 30pt;
+    color: #daa454;
+    font-weight: 500;
+}
+.headquarter p{
+    margin-top: 10px;
+    font-size: 16pt;
+    color: #ffffff;
+    width: 510PX;
+    text-align: left;
+}
+.dif{
+    margin-top: 10px;
+    font-size: 16pt;
+    color: #ffffff;
+    width: 575PX;
+    text-align: left;} 
+
+/* The headquarter End -------------------------------------------------------------------------------------------*/
+
+/* Sections Setting Start -------------------------------------------------------------------------------------------*/
+section{
+    height: 50vh;
+    padding: 70px 300px;
+    margin-top: 100px;
+    text-align: center;
+}
+section p {
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    font-size: 16pt;
+}
+.sub-title{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    font-size: 32pt;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.about{
+    background-color: #000000;
+    background-image: url("../Icons/Okland\ Logo\ 20%.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    color: white;
+    /* margin-bottom: 200px; */
+}
+.about .sub-title{color: #daa454;}
+
+.social{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+    font-size: 18pt;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border-radius: 15px;
+    height: 50px;
+    width: 50;
+    padding: 5px;
+    }
+    
+    .social:hover{
+        background-color: #202020;
+        border-radius: 20px;
+        height: 50px;
+        width: 60;
+        transition: all 0.3s;
+    }
+/*----------------------------------------- Location Start -----------------------------------------*/    
+.location{
+    background-image: url("../Photos/Backgrounds/world-map-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 500px;
+}
+.location p{font-size: 20pt;}
+.arbi{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.button{
+    display: flex;
+    border-radius: 10px;
+    width: 90px;
+    gap: 15px;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #daa454;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16pt;
+    align-items: center;
+    flex-direction: row;
+}
+.button a{color:#000000}
+#click{border-radius: 0;}
+/*----------------------------------------- Location END -----------------------------------------*/    
+
+.contact{
+    position: relative;
+    background: rgb(228,188,95);
+    background: linear-gradient(287deg, rgba(228,188,95,1) 28%, rgba(139,111,46,1) 100%);
+    /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
+}
+#g-img{position: absolute;top: 191px;left: 815px;}
+#g-p{display: inline;position: absolute;top: 200px;left: 525px;}
+#w-img{position: absolute;top: 231px;left: 815px;}
+#w-p{display: inline;position: absolute;top: 240px;left: 475px;}
+#ph-img{position: absolute;top: 271px;left: 815px;}
+#ph-p{display: inline;position: absolute;top: 280px;left: 475px;}
+
+
+
+/* Sections Setting End -------------------------------------------------------------------------------------------*/ 
+
+#btn{
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    height: 45px;
+    width: 45px;
+    float: right;
+    transition: .3s ease-in-out;
+    border-radius: 15px;
+    padding: 5px;
+    border: 0px;
+    background-color: #daa454;
+    opacity: 50%;
+}
+#btn:hover{
+    opacity: 70%;
+}
+  
+
+
+#insta{
+    border-radius: 0px; 
+}
+
+@media (max-width: 540px) {
+}
+
+@media (min-width: 540px) and (max-width: 780px) {
+}

@@ -1,0 +1,125 @@
+
+/*------------------------------------------------------ SPOILERS STYLES ---------------------------------------------------------------*/
+img{
+    height: 280px;
+    width: 280px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+.title{
+    font-size: 40pt;
+    color: #ffffff;
+    /* background-color: #000000; */
+    margin: 20px 0;
+    margin-top: 100px;
+}
+.car-logo{
+    display: inline;
+    height: 50px;
+    width: 50px;
+}
+#hyu{width: 70px;}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div{
+    /* border: green solid 1px; */
+    margin: 10px;
+    border-radius: 10px;
+}
+/* .container .soon{
+    border: rgb(161, 11, 0) solid 1px;
+} */
+
+.av{
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+    background-color: green;
+    border-radius: 10px;
+    margin: auto;
+    padding: 3px;
+    margin-top: 7px;
+    width: 100px;
+}
+
+.av-soon{
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+    background-color: rgb(161, 11, 0);
+    border-radius: 10px;
+    margin: auto;
+    padding: 3px;
+    margin-top: 7px;
+    width: 120px;
+}
+
+.code{
+    color: #ffffff;
+
+}
+.inf-p{
+    font-size: 24pt;
+    color: white;
+    margin-top: 5px;
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 15px;
+    width: 250px;
+    margin: auto;
+}
+
+.roof{
+    color: rgb(255, 217, 0);
+    font-size: 18pt;
+    margin-bottom: 5px;
+}
+
+.lip{
+    color: rgb(0, 38, 255);
+    font-size: 18pt;
+    margin-bottom: 5px;
+}
+
+/*------------------------------------------------------ SPOILERS STYLES END ---------------------------------------------------------------*/
+
+
+/* ................. Mobiles ................. */
+@media (max-width: 539px){
+    img{
+        height: 165px;
+        width: 165px;
+        border-radius: 10px;
+        margin: 5px 5px;
+    }
+    .title{font-size: 26px;}
+    .car-logo{height: 25px; width: 25px;}
+    #hyu{width: 35px;}
+    .container div{margin: 5px;}
+    .av{font-size: 9pt;width: 60px;}
+    .av-soon{font-size: 9pt;width: 85px;}
+    .code{font-size: 10pt; margin: 5px;}
+    .inf-p{font-size: 14pt; margin-bottom: 5px;}
+    .roof{font-size: 12pt; margin-top: 5px;}
+    .lip{font-size: 12pt; margin-top: 5px;}
+}
+/* ................. Mobiles END ................. */
+
+
+/* ................. Tablets Medium ................. */
+
+@media (min-width: 540px) and (max-width: 780px) {
+    
+}
+/* ................. Tablets Medium END ................. */
+
+
+/* ................. Tablets Large ................. */
+@media (min-width: 781px) and (max-width: 1024px){
+    
+}
+/* ................. Tablets Large ................. */
+
